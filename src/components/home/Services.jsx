@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/home";
+import ServicesSkeleton from "../skeletions/ServicesSkeleton";
 
 const Services = () => {
+  const [loading, setLoading] = useState(true);
   const { header, title, description, servicses_cards } = homeData.services;
   const cards = servicses_cards;
+
+  useEffect(() => {
+    // Simulate loading - you can replace this with actual data fetching logic
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <ServicesSkeleton />;
+  }
 
   return (
     <>

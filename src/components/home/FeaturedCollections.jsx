@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/home";
 import { Link } from "react-router-dom";
 import { assets } from "../../constants/assets";
+import FeaturedCollectionsSkeleton from "../skeletions/FeaturedCollectionsSkeleton";
 
 const FeaturedCollections = () => {
+  const [loading, setLoading] = useState(true);
   const { header, title, featured_Cards } = homeData.featured;
   const cards = featured_Cards;
+
+  useEffect(() => {
+    // Simulate loading - you can replace this with actual data fetching logic
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <FeaturedCollectionsSkeleton />;
+  }
 
   return (
     <>

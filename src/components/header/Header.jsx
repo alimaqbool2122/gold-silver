@@ -1,9 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { headerData } from "../../data/header.js";
 import ROUTES from "../../constants/routes.js";
 
 const Header = () => {
+  const location = useLocation();
+
   return (
     <>
       <div className="hidden lg:block bg-[rgba(0,0,0,1)] border-b border-black text-white">
@@ -12,23 +14,32 @@ const Header = () => {
           {/* logo */}
           <Link
             to={ROUTES.HOME}
-            className="py-2.25 px-3 border border-[#B08E22] text-2xl font-semibold font-playfair-display capitalize text-gradient-gold"
+            className={`py-2.25 px-3 border border-[#B08E22] text-2xl font-semibold font-playfair-display capitalize ${
+              location.pathname === ROUTES.HOME
+                ? "text-gradient-gold"
+                : "text-gradient-gold"
+            }`}
           >
             g <span>/s</span>
           </Link>
           {/* navigation */}
           <nav>
             <ul className="flex items-center gap-8.75">
-              {headerData.navigation.map((item, index) => (
-                <li key={index}>
-                  <Link
-                    to={item.to}
-                    className="text-white font-pro-display text-base"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {headerData.navigation.map((item, index) => {
+                const isActive = location.pathname === item.to;
+                return (
+                  <li key={index}>
+                    <Link
+                      to={item.to}
+                      className={`font-pro-display text-base transition-colors ${
+                        isActive ? "text-gradient-gold" : "text-white"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
           {/* authentication */}

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import GetQuoteSkeleton from "../skeletions/GetQuoteSkeleton";
 
 const GetQuote = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading - you can replace this with actual data fetching logic
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <GetQuoteSkeleton />;
+  }
+
   return (
     <>
       <div className="py-15 xl:py-30 bg-black">

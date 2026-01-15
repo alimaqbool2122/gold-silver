@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/home";
+import BrandsSkeleton from "../skeletions/BrandsSkeleton";
 
 const Brands = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading - you can replace this with actual data fetching logic
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <BrandsSkeleton />;
+  }
+
   return (
     <>
       <div

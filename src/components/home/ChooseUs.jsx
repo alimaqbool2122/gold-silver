@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/home";
+import ChooseUsSkeleton from "../skeletions/ChooseUsSkeleton";
 
 const ChooseUs = () => {
+  const [loading, setLoading] = useState(true);
   const { header, title, description, experience, benefits } =
     homeData.whyChooseUs;
+
+  useEffect(() => {
+    // Simulate loading - you can replace this with actual data fetching logic
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <ChooseUsSkeleton />;
+  }
 
   return (
     <>

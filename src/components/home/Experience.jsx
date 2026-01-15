@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../data/home";
 import { Link } from "react-router-dom";
 import { assets } from "../../constants/assets";
+import ExperienceSkeleton from "../skeletions/ExperienceSkeleton";
 
 const Experience = () => {
+  const [loading, setLoading] = useState(true);
   const { title, description, apps } = homeData.experience;
+
+  useEffect(() => {
+    // Simulate loading - you can replace this with actual data fetching logic
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <ExperienceSkeleton />;
+  }
 
   return (
     <>

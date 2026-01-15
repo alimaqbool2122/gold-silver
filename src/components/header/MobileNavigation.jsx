@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ROUTES from "../../constants/routes.js";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { headerData } from "../../data/header.js";
 
 const MobileNavigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     if (menuOpen) {
@@ -58,20 +59,25 @@ const MobileNavigation = () => {
             </div>
             {/* Navbar items */}
             <ul className="">
-              {headerData.navigation.map((item, index) => (
-                <li
-                  key={index}
-                  className="py-3.75 px-2.5 border-b border-[#B08E22]"
-                >
-                  <Link
-                    to={item.to}
-                    onClick={() => setMenuOpen(false)}
-                    className="text-base font-bold relative transition-all duration-300 ease-in-out text-black"
+              {headerData.navigation.map((item, index) => {
+                const isActive = location.pathname === item.to;
+                return (
+                  <li
+                    key={index}
+                    className="py-3.75 px-2.5 border-b border-[#B08E22]"
                   >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+                    <Link
+                      to={item.to}
+                      onClick={() => setMenuOpen(false)}
+                      className={`text-base font-bold relative transition-all duration-300 ease-in-out ${
+                        isActive ? "text-gradient-gold" : "text-black"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
             {/* authentication */}
             <div className="flex items-center gap-4 mt-8 px-2">

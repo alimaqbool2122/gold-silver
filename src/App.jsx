@@ -14,17 +14,21 @@ import Footer from "./components/header/Footer";
 function App() {
   return (
     <>
-      <Header />
-      <MobileNavigation />
-      <Routes>
-        <Route path={ROUTES.HOME} element={<Home />} />
-        <Route path={ROUTES.SERVICES} element={<Services />} />
-        <Route path={ROUTES.COLLECTIONS} element={<Collection />} />
-        <Route path={ROUTES.SELL_PAWN} element={<SellPawn />} />
-        <Route path={ROUTES.ABOUT_US} element={<About />} />
-        <Route path={ROUTES.CONTACT_US} element={<Contact />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col h-screen">
+        <Header />
+        <MobileNavigation />
+        <div className="flex-1">
+          <Routes>
+            <Route path={ROUTES.HOME} element={<Home />} />
+            <Route path={ROUTES.SERVICES} element={<Services />} />
+            <Route path={ROUTES.COLLECTIONS} element={<Collection />} />
+            <Route path={ROUTES.SELL_PAWN} element={<SellPawn />} />
+            <Route path={ROUTES.ABOUT_US} element={<About />} />
+            <Route path={ROUTES.CONTACT_US} element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }
