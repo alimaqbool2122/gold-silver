@@ -43,8 +43,7 @@ const GetQuote = () => {
             </Link>
             <Link
               to="#"
-              className="inline-flex items-center justify-center border-2 border-transparent
-              [border-image:linear-gradient(180deg,#A08122_0%,#6F5813_100%)_1] text-gradient-gold text-xl w-66 h-14.5 text-black font-semibold! rounded-[50px] "
+              className="inline-flex items-center justify-center border-2 border-[#C59F26] text-gradient-gold text-xl w-66 h-14.5 text-black font-semibold! rounded-[50px] "
             >
               Browse Collection
             </Link>

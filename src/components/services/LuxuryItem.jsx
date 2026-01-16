@@ -64,7 +64,7 @@ const YourItems = ({ data }) => {
                   <div className="mt-8">
                     <Link
                       to={button.link}
-                      className="inline-flex items-center justify-center bg-[linear-gradient(256.9deg,#B18325_6.41%,#D7BF75_98.66%)]! rounded-[50px] text-xl w-84.5 h-14.5 text-black font-semibold!"
+                      className="inline-flex items-center justify-center bg-[linear-gradient(256.9deg,#B18325_6.41%,#D7BF75_98.66%)]! rounded-[50px] text-xl w-full sm:w-84.5 h-14.5 text-black font-semibold!"
                     >
                       {button.label}
                     </Link>

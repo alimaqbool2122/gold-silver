@@ -1,10 +1,11 @@
 import React from "react";
 
-const SectionTitle = ({
+const SectionTitleServices = ({
   miniTitle,
   mainTitle,
   highlightTitle,
   description,
+  latestDate,
   backgroundGradient = "linear-gradient(134.45deg, rgba(215, 191, 117, 0.3825) -10.99%, rgba(0, 0, 0, 0.36) 56.8%)",
 }) => {
   return (
@@ -45,8 +46,27 @@ const SectionTitle = ({
           {description}
         </p>
       )}
+
+      {/* Latest date  */}
+      {latestDate && (
+        <div
+          className="w-88 h-14.5 mx-auto rounded-[50px] p-0.5 animate-fade-in-up"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(160, 129, 34, 0.22) 0%, rgba(111, 88, 19, 0.22) 100%)",
+            animationDelay: "1.0s",
+            opacity: 0,
+          }}
+        >
+          <div className="w-full h-full flex items-center justify-center bg-[#1B170C] rounded-[50px]">
+            <p className="text-gradient-gold text-xl">
+              {latestDate}
+            </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
 
-export default SectionTitle;
+export default SectionTitleServices;

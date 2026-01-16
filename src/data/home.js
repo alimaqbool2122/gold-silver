@@ -118,6 +118,22 @@ export const homeData = {
       },
     ],
   },
+  statistics: {
+    stats: [
+      {
+        value: "18+",
+        label: "YEARS EXPERIENCE",
+      },
+      {
+        value: "20K+",
+        label: "HAPPY CLIENTS",
+      },
+      {
+        value: "100%",
+        label: "AUTHENTICATED",
+      },
+    ],
+  },
   experience: {
     title: "Experience Luxury on Mobile",
     description:

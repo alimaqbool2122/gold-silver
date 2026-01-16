@@ -10,6 +10,8 @@ import Contact from "./pages/Contact";
 import ROUTES from "./constants/routes";
 import MobileNavigation from "./components/header/MobileNavigation";
 import Footer from "./components/header/Footer";
+import TermsServices from "./pages/TermsServices";
+import PrivicyPolicy from "./pages/PrivicyPolicy";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path={ROUTES.SELL_PAWN} element={<SellPawn />} />
             <Route path={ROUTES.ABOUT_US} element={<About />} />
             <Route path={ROUTES.CONTACT_US} element={<Contact />} />
+            <Route path={ROUTES.TERMS_OF_SERVICE} element={<TermsServices />} />
+            <Route path={ROUTES.PRIVACY_POLICY} element={<PrivicyPolicy />} />
           </Routes>
         </div>
         <Footer />

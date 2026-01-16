@@ -31,6 +31,9 @@ import Rectangle from "../../src/assets/images/svg/Rectangle.svg";
 import ring_down from "../../src/assets/images/svg/ring_down.svg";
 import mdi_necklace from "../../src/assets/images/svg/mdi_necklace.svg";
 import ring_up from "../../src/assets/images/svg/ring_up.svg";
+import arrow_down from "../../src/assets/images/svg/arrow_down.svg";
+import profile from "../../src/assets/images/svg/profile.svg";
+import Star from "../../src/assets/images/svg/Star.svg";
 
 export const assets = {
   bannerImage,
@@ -65,4 +68,7 @@ export const assets = {
   ring_down,
   mdi_necklace,
   ring_up,
+  arrow_down,
+  profile,
+  Star,
 };

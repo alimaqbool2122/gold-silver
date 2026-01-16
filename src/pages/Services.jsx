@@ -5,6 +5,9 @@ import YourItems from "../components/services/YourItems";
 import LuxuryItems from "../components/services/LuxuryItem";
 import PawnServices from "../components/services/PawnServices";
 import LuxuryWatches from "../components/services/LuxuryWatches";
+import Brands from "../components/home/Brands";
+import HowItWorks from "../components/services/HowItWorks";
+import GetStarted from "../components/services/GetStarted";
 
 const Services = () => {
   const { title, highlightTitle, description } = servicesData.hero;
@@ -38,10 +41,20 @@ const Services = () => {
           {description}
         </p>
       </div>
+      {/* YourItems */}
       <YourItems data={sellYourItemsData} />
+      {/* LixuryItems */}
       <LuxuryItems data={servicesData.buyLuxuryItems} />
+      {/* PawnServices */}
       <PawnServices data={servicesData.pawnServices} />
+      {/* LuxuryWatches */}
       <LuxuryWatches />
+      {/* Brands */}
+      <Brands />
+      {/* HowItWorks */}
+      <HowItWorks />
+      {/* GetStared */}
+      <GetStarted />
     </>
   );
 };

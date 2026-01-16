@@ -67,36 +67,64 @@ export const servicesData = {
       "We specialize in luxury watches and fine jewelry from prestigious brands.",
     items: [
       {
-        icon: assets.clock,
+        icon: assets.watch,
         label: "Watch",
       },
       {
-        icon: assets.plus,
+        icon: assets.ring_up,
         label: "Ring",
       },
       {
-        icon: assets.plus,
+        icon: assets.mdi_necklace,
         label: "Necklace",
       },
       {
-        icon: assets.plus,
+        icon: assets.ring_down,
         label: "Bracelet",
       },
       {
-        icon: assets.plus,
+        icon: assets.Rectangle,
         label: "Gold Bar",
       },
       {
-        icon: assets.plus,
+        icon: assets.bag_alt,
         label: "Bags",
       },
       {
-        icon: assets.plus,
+        icon: assets.crystal_earrings,
         label: "Earrings",
       },
       {
-        icon: assets.plus,
+        icon: assets.add,
         label: "Other",
+      },
+    ],
+  },
+  howItWorks: {
+    title: "How It Works",
+    steps: [
+      {
+        number: 1,
+        title: "Submit",
+        description:
+          "Upload photos and details of your watch via our app or website",
+      },
+      {
+        number: 2,
+        title: "Quote",
+        description:
+          "Receive a preliminary valuation range from our experts",
+      },
+      {
+        number: 3,
+        title: "Verify",
+        description: "Ship your watch for physical authentication",
+      },
+      {
+        number: 4,
+        title: "Payout",
+        description:
+          "Accept the final offer and get paid instantly via wire transfer",
       },
     ],
   },
