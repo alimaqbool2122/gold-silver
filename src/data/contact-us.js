@@ -50,6 +50,12 @@ export const contactUsData = {
         answer:
           "Our evaluation process typically takes 24-48 hours after we receive your item. For in-person appointments, we can provide an initial assessment on the same day. Once approved, transactions can be completed immediately. For pawn services, funds are typically available within 1-2 business days after evaluation completion.",
       },
+      {
+        id: "faq-4",
+        question: "Is my information secure?",
+        answer:
+          "Absolutely. Client confidentiality is fundamental at Gold & Silver, and all personal and transactional information is handled with strict security and discretion.",
+      },
     ],
   },
 };
