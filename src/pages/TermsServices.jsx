@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SectionTitleServices from "../components/common/SectionTitleServices";
 import { termsServicesData } from "../data/TermsServices";
+import { assets } from "@/constants/assets";
 
 const TermsServices = () => {
   const acceptanceOfTerms = termsServicesData.acceptanceOfTerms;
@@ -37,7 +38,7 @@ const TermsServices = () => {
             {acceptanceOfTerms.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="text-base lg:text-xl text-[#DBDBDB] pb-2"
+                className="text-base lg:text-xl text-[#DBDBDB] pb-2 max-w-290.5"
               >
                 {paragraph}
               </p>
@@ -73,7 +74,7 @@ const TermsServices = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pt-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pt-8 max-w-290.5">
               {ourServices.conclusion}
             </p>
           </div>
@@ -125,14 +126,14 @@ const TermsServices = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pt-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pt-8 max-w-290.5">
               {kycVerification.purpose}
             </p>
             <div className="flex flex-col gap-3 mt-8">
               <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display">
                 {kycVerification.verificationTimeline.title}
               </h3>
-              <p className="text-base lg:text-xl text-[#DBDBDB]">
+              <p className="text-base lg:text-xl text-[#DBDBDB] max-w-290.5">
                 {kycVerification.verificationTimeline.description}
               </p>
             </div>
@@ -161,20 +162,20 @@ const TermsServices = () => {
                   >
                     {warranty}
                   </li>
-                )
+                ),
               )}
             </ul>
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mt-8 mb-4">
               {sellingItems.offersAndAcceptance.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {sellingItems.offersAndAcceptance.description}
             </p>
             <div className="flex flex-col gap-3">
               <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display">
                 {sellingItems.itemVerification.title}
               </h3>
-              <p className="text-base lg:text-xl text-[#DBDBDB]">
+              <p className="text-base lg:text-xl text-[#DBDBDB] max-w-290.5">
                 {sellingItems.itemVerification.description}
               </p>
             </div>
@@ -187,21 +188,21 @@ const TermsServices = () => {
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mb-4">
               {buyingItems.productInformation.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {buyingItems.productInformation.description}
             </p>
 
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mb-4">
               {buyingItems.pricing.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {buyingItems.pricing.description}
             </p>
             <div className="flex flex-col gap-3">
               <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display">
                 {buyingItems.authenticationGuarantee.title}
               </h3>
-              <p className="text-base lg:text-xl text-[#DBDBDB]">
+              <p className="text-base lg:text-xl text-[#DBDBDB] max-w-290.5">
                 {buyingItems.authenticationGuarantee.description}
               </p>
             </div>
@@ -214,7 +215,7 @@ const TermsServices = () => {
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mb-4">
               {pawnServices.loanTerms.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {pawnServices.loanTerms.description}
             </p>
             <ul
@@ -234,7 +235,7 @@ const TermsServices = () => {
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mt-8 mb-4">
               {pawnServices.itemStorage.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {pawnServices.itemStorage.description}
             </p>
             <div className="flex flex-col gap-3">
@@ -258,21 +259,21 @@ const TermsServices = () => {
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mb-4">
               {payments.paymentMethods.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {payments.paymentMethods.description}
             </p>
 
             <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display mb-4">
               {payments.sellerPayments.title}
             </h3>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {payments.sellerPayments.description}
             </p>
             <div className="flex flex-col gap-3">
               <h3 className="text-xl text-gradient-gold font-semibold font-playfair-display">
                 {payments.fees.title}
               </h3>
-              <p className="text-base lg:text-xl text-[#DBDBDB]">
+              <p className="text-base lg:text-xl text-[#DBDBDB] max-w-290.5">
                 {payments.fees.description}
               </p>
             </div>
@@ -351,7 +352,7 @@ const TermsServices = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pt-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pt-8 max-w-290.5">
               {termination.conclusion}
             </p>
           </div>
@@ -360,7 +361,7 @@ const TermsServices = () => {
             <h1 className="text-3xl sm:text-5xl md:text-[40px] text-[#DBDBDB]! font-semibold font-playfair-display border-b border-[#39311D] pb-8 mb-8">
               {changesToTerms.title}
             </h1>
-            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
+            <p className="text-base lg:text-xl text-[#DBDBDB] pb-8 max-w-290.5">
               {changesToTerms.description}
             </p>
             <p className="text-base lg:text-xl text-[#DBDBDB]">
@@ -375,7 +376,7 @@ const TermsServices = () => {
             <p className="text-base lg:text-xl text-[#DBDBDB] pb-8">
               {contactUs.intro}
             </p>
-            <div className="w-full h-full lg:w-280 lg:h-55.25 p-6 rounded-xl bg-[#111111] mt-4">
+            <div className="w-full h-full xl:w-280 lg:h-55.25 p-6 rounded-xl bg-[#111111] mt-4">
               <h1 className="text-white text-base lg:text-2xl font-semibold font-playfair-display mb-2">
                 {contactUs.contactInfo.department}
               </h1>
@@ -384,18 +385,20 @@ const TermsServices = () => {
               </p>
               <Link
                 to={`mailto:${contactUs.contactInfo.email}`}
-                className="text-gradient-gold text-base lg:text-lg"
+                className="text-gradient-gold text-base lg:text-lg flex items-center gap-3"
               >
+                <img src={assets.email} alt="emil" className="w-4 h-4" />
                 {contactUs.contactInfo.email}
               </Link>
-              <br />
               <Link
                 to={`tel:${contactUs.contactInfo.phone}`}
-                className="text-gradient-gold text-base lg:text-lg"
+                className="text-gradient-gold text-base lg:text-lg flex items-center gap-3"
               >
+                <img src={assets.call_outline} alt="emil" className="w-4 h-4" />
                 {contactUs.contactInfo.phone}
               </Link>
-              <p className="text-gradient-gold text-base lg:text-lg">
+              <p className="text-gradient-gold text-base lg:text-lg flex items-center gap-3">
+                <img src={assets.location} alt="emil" className="w-4 h-4" />
                 {contactUs.contactInfo.address}
               </p>
             </div>

@@ -33,13 +33,13 @@ const Banner = () => {
             {/* buttons group */}
             <div className="flex flex-wrap items-center justify-center gap-5">
               <button
-                className="bg-[linear-gradient(256.9deg,#B18325_6.41%,#D7BF75_98.66%)]! w-70 rounded-[50px] h-14.5 text-black font-semibold! animate-slide-in-left hover:scale-105 transition-transform duration-300"
+                className="bg-[linear-gradient(256.9deg,#B18325_6.41%,#D7BF75_98.66%)]! w-70 rounded-[50px] h-14.5 text-black font-semibold! animate-slide-in-left transition-transform duration-300"
                 style={{ animationDelay: "1s", opacity: 0 }}
               >
                 Get Free Quote
               </button>
               <button
-                className="bg-[linear-gradient(256.9deg,#B18325_6.41%,#D7BF75_98.66%)]! w-70 rounded-[50px] h-14.5 text-black font-semibold! animate-slide-in-right hover:scale-105 transition-transform duration-300"
+                className="bg-transparent text-gradient-gold w-70 rounded-[50px] h-14.5 border-2! border-[#C59F26]! text-black font-semibold! animate-slide-in-right transition-transform duration-300"
                 style={{ animationDelay: "1.2s", opacity: 0 }}
               >
                 Browse Collection

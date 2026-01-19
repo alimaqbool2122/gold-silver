@@ -34,6 +34,9 @@ import ring_up from "../../src/assets/images/svg/ring_up.svg";
 import arrow_down from "../../src/assets/images/svg/arrow_down.svg";
 import profile from "../../src/assets/images/svg/profile.svg";
 import Star from "../../src/assets/images/svg/Star.svg";
+import email from "../../src/assets/images/svg/email.svg";
+import call_outline from "../../src/assets/images/svg/call_outline.svg";
+import location from "../../src/assets/images/svg/location.svg";
 
 export const assets = {
   bannerImage,
@@ -71,4 +74,7 @@ export const assets = {
   arrow_down,
   profile,
   Star,
+  email,
+  call_outline,
+  location,
 };
