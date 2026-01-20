@@ -22,22 +22,22 @@ const Services = () => {
       />
       {/* Services Top */}
       <div className="bg-black py-14 flex flex-col gap-8">
-        <h1
-          className="text-3xl sm:text-5xl md:text-[40px] text-center text-white opacity-70! font-semibold font-playfair-display animate-fade-in-up"
-        >
-          {title}{" "}
-          <span
-            className="text-gradient-gold animate-fade-in"
-          >
-            {highlightTitle}
-          </span>
-        </h1>
-        <p
-          className="text-base text-center max-w-220 mx-3 md:mx-auto sm:text-xl text-white opacity-70! font-pro-display animate-fade-in-up"
+        <div
+          className="animate-fade-in-up"
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
-          {description}
-        </p>
+          <h1 className="text-3xl sm:text-5xl md:text-[40px] text-center text-white opacity-70! font-semibold font-playfair-display">
+            {title} <span className="text-gradient-gold">{highlightTitle}</span>
+          </h1>
+        </div>
+        <div
+          className="animate-fade-in-up"
+          style={{ animationDelay: "0.8s", opacity: 0 }}
+        >
+          <p className="text-base text-center max-w-220 mx-3 md:mx-auto sm:text-xl text-white opacity-70! font-pro-display">
+            {description}
+          </p>
+        </div>
       </div>
       {/* YourItems */}
       <YourItems data={sellYourItemsData} />

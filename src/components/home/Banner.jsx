@@ -24,12 +24,14 @@ const Banner = () => {
                 {homeData.banner.subTitle}
               </span>
             </h1>
-            <p
-              className="text-base sm:text-xl text-white opacity-70! max-w-154 mx-auto font-pro-display animate-fade-in-up"
+            <div
+              className="animate-fade-in-up"
               style={{ animationDelay: "0.8s", opacity: 0 }}
             >
-              {homeData.banner.description}
-            </p>
+              <p className="text-base sm:text-xl text-white opacity-70! max-w-154 mx-auto font-pro-display">
+                {homeData.banner.description}
+              </p>
+            </div>
             {/* buttons group */}
             <div className="flex flex-wrap items-center justify-center gap-5">
               <button
