@@ -35,10 +35,10 @@ const Experience = () => {
         <div className="container flex flex-col gap-14">
           {/* Top section */}
           <div className="flex flex-col gap-6">
-            <h1 className="text-3xl sm:text-[40px] text-[#DBDBDB]! font-semibold font-playfair-display text-center">
+            <h1 className="text-3xl sm:text-[40px] text-white font-semibold font-playfair-display text-center">
               {title}
             </h1>
-            <p className="text-base sm:text-xl text-[#DBDBDB] text-center">{description}</p>
+            <p className="text-base sm:text-xl text-white opacity-70! text-center">{description}</p>
           </div>
           {/* Download wrapper */}
           <div className="flex flex-wrap items-center justify-center gap-8">

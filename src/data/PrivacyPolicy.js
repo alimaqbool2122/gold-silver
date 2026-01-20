@@ -12,7 +12,7 @@ export const privacyPolicyData = {
     },
   },
   informationCollection: {
-    title: "2. Information Collection",
+    title: "2. Selling Items",
     text: "Personal Information",
     intro: "We collect information you provide directly to us, including:",
     table: [
@@ -128,7 +128,8 @@ export const privacyPolicyData = {
   },
   dataSecurity: {
     title: "5. Data Security",
-    intro: "We implement industry-standard security measures to protect your information:",
+    intro:
+      "We implement industry-standard security measures to protect your information:",
     measures: [
       {
         title: "Encryption",
@@ -192,7 +193,8 @@ export const privacyPolicyData = {
   },
   yourRights: {
     title: "7. Your Rights",
-    intro: "Depending on your location, you may have the following rights regarding your personal data:",
+    intro:
+      "Depending on your location, you may have the following rights regarding your personal data:",
     rights: [
       {
         title: "Access",
@@ -270,13 +272,15 @@ export const privacyPolicyData = {
   },
   policyChanges: {
     title: "11. Policy Changes",
-    intro: "We may update this Privacy Policy from time to time. We will notify you of any material changes by:",
+    intro:
+      "We may update this Privacy Policy from time to time. We will notify you of any material changes by:",
     notificationMethods: [
       "Posting the updated policy on our website",
-      "Updating the \"Last Updated\" date",
+      'Updating the "Last Updated" date',
       "Sending an email notification for significant changes",
     ],
-    conclusion: "We encourage you to review this policy periodically to stay informed about how we protect your information.",
+    conclusion:
+      "We encourage you to review this policy periodically to stay informed about how we protect your information.",
   },
   contactUs: {
     title: "12. Contact Us",
@@ -284,9 +288,10 @@ export const privacyPolicyData = {
       "If you have questions or concerns about this Privacy Policy or our data practices, please contact us:",
     contactInfo: {
       department: "Gold & Silver Privacy Team",
-      email: "privacy@goldsilver.com",
-      phone: "+1 (555) 123-4567",
-      address: "123 Luxury Lane, Suite 456, Gold City, GC 78901",
+      text: "We're here to help with any questions or concerns.",
+      email: "contabilidadgoldandsilver@gmail.com",
+      phone: "+1-809-540-7219 ",
+      address: "Lincoln Avenue 850, Plaza Andalucia II Suite 32- A, Piantini. Santo Domingo Dominican Republic 10004 ",
     },
   },
 };

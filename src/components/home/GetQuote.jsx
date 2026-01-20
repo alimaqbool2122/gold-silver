@@ -28,7 +28,7 @@ const GetQuote = () => {
               Ready to Get 
               <span className="text-gradient-gold">Your Quote?</span>
             </h1>
-            <p className="text-base sm:text-xl text-[#DBDBDB] text-center max-w-162.5 mx-auto">
+            <p className="text-base sm:text-xl text-white opacity-70! text-center max-w-162.5 mx-auto">
               Experience premium service with the most trusted name in luxury
               watch and jewelry exchange.
             </p>

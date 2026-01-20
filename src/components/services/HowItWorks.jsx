@@ -25,7 +25,7 @@ const HowItWorks = () => {
         <div className="container">
           <div className="flex flex-col gap-17.5">
             {/* title */}
-            <h1 className="text-3xl sm:text-5xl md:text-[40px] text-center text-[#DBDBDB]! font-semibold font-playfair-display">
+            <h1 className="text-3xl sm:text-5xl md:text-[40px] text-center text-white font-semibold font-playfair-display">
               {title}
             </h1>
             {/* steps cards */}
@@ -41,7 +41,7 @@ const HowItWorks = () => {
                     <h3 className="text-gradient-gold text-xl font-medium font-playfair-display">
                       {step.title}
                     </h3>
-                    <p className="text-[#DBDBDB] text-xl text-center">
+                    <p className="text-white opacity-70! text-xl text-center">
                       {step.description}
                     </p>
                   </div>

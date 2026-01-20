@@ -29,7 +29,7 @@ const Story = () => {
                   {storyData.paragraphs.map((paragraph, index) => (
                     <p
                       key={index}
-                      className="text-[#DBDBDB] text-base md:text-xl"
+                      className="text-white opacity-70! text-base md:text-xl"
                     >
                       {paragraph}
                     </p>

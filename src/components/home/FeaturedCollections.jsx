@@ -24,26 +24,15 @@ const FeaturedCollections = () => {
 
   return (
     <>
-      <div className="bg-black py-15 xl:py-30 relative overflow-hidden">
-        {/* Decorative blurred ellipse */}
-        <div
-          className="absolute w-1/4 h-50 rounded-full opacity-30 "
-          style={{
-            backgroundColor: "#A08122",
-            top: "-25px",
-            left: "28%",
-            transform: "translateX(200px)",
-            filter: "blur(80px)",
-          }}
-        ></div>
-        <div className="container text-white relative z-10">
+      <div className="xl:py-30 featured-bg">
+        <div className="container">
           {/* Featured header */}
           <div>
             <h3 className="text-gradient-gold text-base font-medium">
               {header}
             </h3>
             <div className="flex flex-wrap items-center justify-between mt-3">
-              <h1 className="text-2xl sm:text-[28px] lg:text-[40px] font-semibold font-playfair-display">
+              <h1 className="text-2xl sm:text-[28px] lg:text-[40px] font-semibold font-playfair-display text-white">
                 {title}
               </h1>
               <Link
@@ -92,10 +81,10 @@ const FeaturedCollections = () => {
                   )}
                 </div>
                 <div className="px-5 py-8">
-                  <h2 className="font-playfair-display text-xl font-medium text-center line-clamp-1">
+                  <h2 className="font-playfair-display text-xl text-white font-medium text-center line-clamp-1">
                     {card.name}
                   </h2>
-                  <p className="text-[#DBDBDB] text-base py-2 text-center">
+                  <p className="text-white opacity-65 text-base py-2 text-center">
                     {card.model}
                   </p>
                   <p className="text-gradient-gold text-xl font-medium text-center">

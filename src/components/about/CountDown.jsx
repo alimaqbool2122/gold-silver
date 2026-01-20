@@ -153,7 +153,7 @@ const CountDown = () => {
                 <h3 className="text-gradient-gold text-xl lg:text-[32px] font-bold mb-2">
                   {formatDisplayValue(counters[index], stat.value)}
                 </h3>
-                <p className="text-[#DBDBDB] text-base uppercase tracking-wider">
+                <p className="text-white opacity-70! text-base uppercase tracking-wider">
                   {stat.label}
                 </p>
               </div>

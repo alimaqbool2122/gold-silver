@@ -39,7 +39,7 @@ const SectionTitle = ({
       </h1>
       {description && (
         <p
-          className="text-base sm:text-xl text-[#DBDBDB] md:w-[70%] lg:w-[50%] xl:w-[60%] mx-auto font-pro-display max-w-150 animate-fade-in-up"
+          className="text-base sm:text-xl text-white opacity-70! md:w-[70%] lg:w-[50%] xl:w-[60%] mx-auto font-pro-display max-w-150 animate-fade-in-up"
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           {description}

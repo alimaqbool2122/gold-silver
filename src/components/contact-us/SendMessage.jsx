@@ -134,7 +134,7 @@ const SendMessage = () => {
 
             {/* Faq Section */}
             <div className="col-span-12 lg:col-span-6 flex flex-col gap-5 sm:gap-7 mt-8 lg:mt-0">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#DBDBDB]! font-semibold font-playfair-display">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white font-semibold font-playfair-display">
                 FAQ
               </h1>
               <AccordionPrimitive.Root
@@ -168,7 +168,7 @@ const SendMessage = () => {
                     </AccordionPrimitive.Header>
                     <AccordionPrimitive.Content className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
                       <div className="pb-3 sm:pb-4 pt-0">
-                        <p className="text-white text-xs sm:text-sm md:text-base leading-relaxed">
+                        <p className="text-white opacity-70! text-xs sm:text-sm md:text-base leading-relaxed">
                           {item.answer}
                         </p>
                       </div>

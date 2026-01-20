@@ -32,7 +32,7 @@ const Header = () => {
                     <Link
                       to={item.to}
                       className={`font-pro-display text-base transition-colors ${
-                        isActive ? "text-gradient-gold" : "text-white"
+                        isActive ? "text-gradient-gold" : "text-[#DBDBDB]"
                       }`}
                     >
                       {item.label}

@@ -36,7 +36,7 @@ const YourItems = ({ data }) => {
                 <h1 className="text-2xl md:text-[28px] lg:text-[40px] font-semibold font-playfair-display text-white mb-5">
                   {title}
                 </h1>
-                <p className="text-[#DBDBDB] text-base md:text-xl">
+                <p className="text-white opacity-70! text-base md:text-xl">
                   {description}
                 </p>
 
@@ -50,7 +50,7 @@ const YourItems = ({ data }) => {
                             <img src={tickIcon} alt="tick" className="" />
                           </div>
                         )}
-                        <p className="text-[#DBDBDB]! text-base">{feature}</p>
+                        <p className="text-white opacity-70! text-base">{feature}</p>
                       </li>
                     ))}
                   </ul>

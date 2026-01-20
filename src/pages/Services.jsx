@@ -23,19 +23,17 @@ const Services = () => {
       {/* Services Top */}
       <div className="bg-black py-14 flex flex-col gap-8">
         <h1
-          className="text-3xl sm:text-5xl md:text-[40px] text-center text-[#DBDBDB]! font-semibold font-playfair-display animate-fade-in-up"
-          style={{ animationDelay: "0.2s", opacity: 0 }}
+          className="text-3xl sm:text-5xl md:text-[40px] text-center text-white opacity-70! font-semibold font-playfair-display animate-fade-in-up"
         >
           {title}{" "}
           <span
             className="text-gradient-gold animate-fade-in"
-            style={{ animationDelay: "0.6s", opacity: 0 }}
           >
             {highlightTitle}
           </span>
         </h1>
         <p
-          className="text-base text-center max-w-220 mx-3 md:mx-auto sm:text-xl text-[#DBDBDB] font-pro-display animate-fade-in-up"
+          className="text-base text-center max-w-220 mx-3 md:mx-auto sm:text-xl text-white opacity-70! font-pro-display animate-fade-in-up"
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           {description}

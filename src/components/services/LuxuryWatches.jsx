@@ -33,27 +33,16 @@ const LuxuryWatches = () => {
           }
         `}
       </style>
-      <div className="py-5 sm:py-20 bg-black relative overflow-hidden">
+      <div className="py-5 sm:py-20 featured-bg">
         {/* Decorative blurred ellipse */}
-        <div
-          className="absolute w-1/4 h-50 rounded-full opacity-30 "
-          style={{
-            backgroundColor: "#A08122",
-            top: "-25px",
-            left: "28%",
-            transform: "translateX(200px)",
-            filter: "blur(80px)",
-          }}
-        ></div>
-
-        <div className="bg-black py-14 flex flex-col gap-8">
+        <div className="py-14 flex flex-col gap-8">
           <h1 className="text-3xl sm:text-5xl md:text-[40px] text-center text-[#DBDBDB]! font-semibold font-playfair-display">
             {title}{" "}
             <span className="text-gradient-gold animate-fade-in">
               {highlightTitle}
             </span>
           </h1>
-          <p className="text-base text-center max-w-120 mx-auto sm:text-xl text-[#DBDBDB] font-pro-display">
+          <p className="text-base text-center max-w-120 mx-auto sm:text-xl text-white opacity-70! font-pro-display">
             {description}
           </p>
         </div>
@@ -73,7 +62,7 @@ const LuxuryWatches = () => {
                       className="w-9.75 h-9.75"
                     />
                   </div>
-                  <p className="text-xl font-semibold text-[#DBDBDB] text-c font-playfair-display">
+                  <p className="text-xl font-semibold text-white opacity-70! text-c font-playfair-display">
                     {item.label}
                   </p>
                 </div>

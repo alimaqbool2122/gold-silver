@@ -9,13 +9,7 @@ const SectionTitleServices = ({
   backgroundGradient = "linear-gradient(134.45deg, rgba(215, 191, 117, 0.3825) -10.99%, rgba(0, 0, 0, 0.36) 56.8%)",
 }) => {
   return (
-    <div
-      className="py-15 md:py-36 flex flex-col gap-4 text-center"
-      style={{
-        backgroundColor: "#000000",
-        backgroundImage: backgroundGradient,
-      }}
-    >
+    <div className="py-15 md:py-36 flex flex-col gap-4 text-center featured-bg">
       {miniTitle && (
         <h3
           className="text-gradient-gold text-base font-medium animate-fade-in-up"
@@ -50,7 +44,7 @@ const SectionTitleServices = ({
       {/* Latest date  */}
       {latestDate && (
         <div
-          className="w-88 h-14.5 mx-auto rounded-[50px] p-0.5 animate-fade-in-up"
+          className="w-full lg:w-88 h-14.5 mx-auto rounded-[50px] p-0.5 animate-fade-in-up"
           style={{
             background:
               "linear-gradient(180deg, rgba(160, 129, 34, 0.22) 0%, rgba(111, 88, 19, 0.22) 100%)",
@@ -59,9 +53,7 @@ const SectionTitleServices = ({
           }}
         >
           <div className="w-full h-full flex items-center justify-center bg-[#1B170C] rounded-[50px]">
-            <p className="text-gradient-gold text-xl">
-              {latestDate}
-            </p>
+            <p className="text-gradient-gold text-xl">{latestDate}</p>
           </div>
         </div>
       )}

@@ -28,7 +28,7 @@ const Footer = () => {
                   </h3>
                 </div>
 
-                <p className="text-[#DBDBDB] text-base">{about.description}</p>
+                <p className="text-white opacity-70! text-base">{about.description}</p>
 
                 {/* Social Media Icons */}
                 <div className="flex items-center gap-3.5">
@@ -58,7 +58,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3.75">
                   {services.links.map((link, index) => (
                     <li key={index}>
-                      <Link to={link.link} className="text-base text-[#DBDBDB]">
+                      <Link to={link.link} className="text-base text-white opacity-70!">
                         {link.label}
                       </Link>
                     </li>
@@ -76,7 +76,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3.75">
                   {company.links.map((link, index) => (
                     <li key={index}>
-                      <Link to={link.link} className="text-base text-[#DBDBDB]">
+                      <Link to={link.link} className="text-base text-white opacity-70!">
                         {link.label}
                       </Link>
                     </li>
@@ -93,12 +93,12 @@ const Footer = () => {
                 </h3>
                 <div className="flex flex-col gap-3.75">
                   <p className="text-base text-[#DBDBDB]">{contact.phone}</p>
-                  <Link to="#" className="text-base text-[#DBDBDB]">
+                  <Link to="#" className="text-base text-white opacity-70!">
                     {contact.email}
                   </Link>
                   <div className="flex flex-col">
                     {contact.address.map((line, index) => (
-                      <p key={index} className="text-base text-[#DBDBDB]">
+                      <p key={index} className="text-base text-white opacity-70!">
                         {line}
                       </p>
                     ))}

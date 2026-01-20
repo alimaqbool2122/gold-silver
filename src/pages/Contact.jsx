@@ -3,6 +3,7 @@ import SectionTitle from "../components/common/SectionTitle";
 import GetInTouch from "../components/contact-us/GetInTouch";
 import SendMessage from "../components/contact-us/SendMessage";
 import Faq from "../components/contact-us/Faq";
+import GetStarted from "@/components/services/GetStarted";
 
 const Contact = () => {
   return (
@@ -16,6 +17,8 @@ const Contact = () => {
       <GetInTouch />
       {/* Send us Message Form */}
       <SendMessage />
+      {/* Get started */}
+      <GetStarted />
     </>
   );
 };

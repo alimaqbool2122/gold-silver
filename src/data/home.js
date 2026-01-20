@@ -1,3 +1,4 @@
+import ROUTES from "@/constants/routes";
 import { assets } from "../constants/assets";
 export const homeData = {
   banner: {
@@ -205,10 +206,10 @@ export const homeData = {
       ],
     },
     bottomLink: {
-      title: "© 2025 G/S Luxury Exchange. All rights reserved.",
+      title: "© 2026 G/S Luxury Exchange. All rights reserved.",
       links: [
-        { label: "Privacy Policy", link: "#" },
-        { label: "Terms of Services", link: "#" },
+        { label: "Privacy Policy", link: ROUTES.PRIVACY_POLICY },
+        { label: "Terms of Services", link: ROUTES.TERMS_OF_SERVICE },
         { label: "FAQ", link: "#" },
       ],
     },

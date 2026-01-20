@@ -13,19 +13,19 @@ const Banner = () => {
           {/* Banner content */}
           <div className="text-center flex flex-col gap-3 sm:gap-6">
             <h1
-              className="text-3xl sm:text-5xl md:text-[58px] text-[#DBDBDB]! font-semibold lg:w-[80%] xl:w-[50%] mx-auto font-playfair-display animate-fade-in-up"
+              className="text-3xl sm:text-5xl md:text-[58px] text-[#DBDBDB] font-semibold max-w-154 mx-auto font-playfair-display animate-fade-in-up"
               style={{ animationDelay: "0.2s", opacity: 0 }}
             >
               {homeData.banner.title}
               <span
-                className="text-gradient-gold mt-3 block animate-fade-in"
+                className="text-gradient-gold mt-3 inline-block animate-fade-in"
                 style={{ animationDelay: "0.6s", opacity: 0 }}
               >
                 {homeData.banner.subTitle}
               </span>
             </h1>
             <p
-              className="text-base sm:text-xl text-[#DBDBDB] md:w-[70%] lg:w-[50%] xl:w-[60%] mx-auto font-pro-display animate-fade-in-up"
+              className="text-base sm:text-xl text-white opacity-70! max-w-154 mx-auto font-pro-display animate-fade-in-up"
               style={{ animationDelay: "0.8s", opacity: 0 }}
             >
               {homeData.banner.description}

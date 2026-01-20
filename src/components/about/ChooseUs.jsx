@@ -30,7 +30,7 @@ const ChooseUs = () => {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="bg-[#111111] rounded-[15px] p-6 animate-fade-in-up max-w-[480px] w-full mx-auto md:mx-0"
+                className="bg-[#111111] rounded-[15px] p-6 animate-fade-in-up max-w-120 w-full mx-auto md:mx-0"
                 style={{
                   animationDelay: `${0.6 + index * 0.2}s`,
                   opacity: 0,
@@ -50,7 +50,7 @@ const ChooseUs = () => {
                     </h2>
 
                     {/* Description */}
-                    <p className="text-[#DBDBDB] text-base">
+                    <p className="text-white opacity-70! text-base">
                       {card.description}
                     </p>
                   </div>

@@ -6,13 +6,15 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --bs-font-pro-display: "SF Pro Display", system-ui, -apple-system, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  --bs-font-pro-display:
+    "SF Pro Display", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-playfair-display: "Playfair Display", Georgia, "Times New Roman",
-    serif;
-  --bs-font-sf-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
+  --bs-font-playfair-display:
+    "Playfair Display", Georgia, "Times New Roman", serif;
+  --bs-font-sf-mono:
+    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -220,6 +222,13 @@ body {
 .placeholder-text-white {
   font-size: 14px;
   color: white;
+}
+
+.featured-bg {
+  background: url("../src//assets//images/featured-collection/featured_bg.png");
+  background-size: cover;
+  /* background-position: center; */
+  background-color: #000000;
 }
 
 @theme inline {

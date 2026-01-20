@@ -32,7 +32,7 @@ const Services = () => {
             <h1 className="font-playfair-display text-2xl sm:text-3xl md:text-[40px] font-semibold text-white">
               {title}
             </h1>
-            <p className="text-[#DBDBDB] text-base sm:text-xl lg:w-[50%] mx-auto md:mt-4">
+            <p className="text-white opacity-70 text-base sm:text-xl lg:w-[50%] mx-auto md:mt-4">
               {description}
             </p>
           </div>
@@ -54,7 +54,7 @@ const Services = () => {
                   <h2 className="text-xl text-gradient-gold font-medium">
                     {card.title}
                   </h2>
-                  <p className="text-[#DBDBDB] text-base px-16 lg:px-26.75">
+                  <p className="text-white opacity-68 text-base px-16 lg:px-26.75">
                     {card.description}
                   </p>
                 </div>

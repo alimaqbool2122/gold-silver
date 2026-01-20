@@ -24,7 +24,7 @@ const OurTeam = () => {
               </span>
             </h1>
             <p
-              className="text-base md:text-xl text-[#DBDBDB] text-center font-pro-display animate-fade-in-up"
+              className="text-base md:text-xl text-white opacity-70! text-center font-pro-display animate-fade-in-up"
               style={{ animationDelay: "0.6s", opacity: 0 }}
             >
               {subtitle}
@@ -62,7 +62,7 @@ const OurTeam = () => {
                 </p>
 
                 {/* Description */}
-                <p className="text-[#DBDBDB] text-base lg:text-lg max-w-xs">
+                <p className="text-white opacity-70! text-base lg:text-lg max-w-xs">
                   {member.description}
                 </p>
               </div>

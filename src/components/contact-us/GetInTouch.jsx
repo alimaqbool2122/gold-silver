@@ -14,7 +14,7 @@ const GetInTouch = () => {
               {title}{" "}
               <span className="text-gradient-gold">{highlightTitle}</span>
             </h1>
-            <p className="text-base max-w-160  sm:text-xl text-[#DBDBDB]">
+            <p className="text-base max-w-160  sm:text-xl text-white opacity-70!">
               {description}
             </p>
             {/* GetInTouch Cards */}
@@ -33,7 +33,7 @@ const GetInTouch = () => {
                             className={`text-base ${
                               card.type === "phone" || card.type === "email"
                                 ? "text-gradient-gold cursor-pointer"
-                                : "text-[#DBDBDB]"
+                                : "text-white opacity-70!"
                             }`}
                           >
                             {item}
